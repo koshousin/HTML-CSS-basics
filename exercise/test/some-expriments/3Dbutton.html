@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../fontAwesome/css/all.min.css">
+    <style>
+        body {
+            background-color: #ececec;
+            padding: 0;
+            margin: 0;
+        }
+
+        input[type=checkbox] {
+            height: 200px;
+            width: 200px;
+            /* 把框和对勾隐藏起来 */
+            appearance: none;
+            box-shadow:
+            -10px -10px 15px rgba(255, 255, 255, 0.5),
+            10px 10px 15px rgba(70, 70, 70, 0.12);
+            position: absolute;
+            /* 为了让内容居中设置 */
+            transform: translate(-50%,-50%);
+            top:50%;
+            left:50%;
+            border-radius: 50%;
+            border:8px solid #ececec;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"]:after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f011";
+            font-weight: 900;
+            color: #7a7a7a;
+            font-size: 70px;
+        }
+
+        input[type="checkbox"]:checked {
+            box-shadow:
+            -10px -10px 15px rgba(255, 255, 255, 0.5),
+            10px 10px 15px rgba(70, 70, 70, 0.12),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+        }
+
+        input[type="checkbox"]:checked:after {
+            color: #15e38a;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- <span><i class="fas fa-power-off"></i></span> -->
+    <input type="checkbox">
+</body>
+</html>

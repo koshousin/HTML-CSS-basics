@@ -1,0 +1,31 @@
+.box1 .box2 {
+  background-color: aqua;
+}
+.box1 > .box3,
+.p2 {
+  background-color: blue;
+}
+.box1:hover {
+  background-color: chartreuse;
+}
+.p1 {
+  width: 100px;
+  height: 100px;
+}
+.p2 {
+  color: red;
+}
+.p3 {
+  width: 100px;
+  height: 100px;
+}
+.p5 {
+  width: 100px;
+  height: 100px;
+  color: chocolate;
+}
+.p6 {
+  width: 100px;
+  height: 100px;
+  background-color: #cc0000;
+}

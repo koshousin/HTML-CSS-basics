@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            /* 设置人眼距离网页的距离 */
+             perspective: 600px;
+            
+        }
+
+        body{
+            padding:0;
+            text-align: center;
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+           
+            margin:40px auto;
+            background-image: url("../img/mi/mi-logo.png");
+            background-size: cover;
+            /* 
+                transform
+                    - 改变位置和形状
+                    - 不会影响页面布局
+
+                函数方法：
+                    - translate()     平移(以元素左上角为顶点)
+                        translateX()    
+                        translateY()
+                        translateZ()
+                            - 参数可以是数值或百分比(相对于自身)
+                            - Z 轴平移，调整元素和人眼之间的距离
+                              距离越大，离得越近。由于立体效果，
+                              默认不支持透视，要想透视需开启视距
+                    - rotate()        旋转
+                        ratateX()       水平中线旋转
+                        ratateY()
+                        ratateZ()       中心旋转
+
+                    - scale()
+                        scaleX()
+                        scaleY()
+                        scale()
+
+                transform-origin:
+                    - center(50%,50%)        默认值
+                    - x , y
+                          
+             */
+
+             /* transform: translate(-50%,-50%);
+             position: absolute;
+             top:50%;
+             left:50%; */
+             transition: all 3s ;
+        }
+
+        div:hover {
+            /* 离得越来越远 */
+            transform: rotateY(180deg) translateZ(300px);
+            /* 离得越来越近 */
+            /* transform:  translateZ(300px) rotateY(180deg); */
+            /* box-shadow: 0 5px 10px #fff; */
+
+            /* 设置是否显示元素背面 */
+            backface-visibility: visible;
+        }
+
+        .box2 {
+            width:100px;
+            height: 100px;
+            background-color: coral;
+            margin:20px auto;
+            transition:all .3s;
+        }
+
+        .box2:hover {
+            
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

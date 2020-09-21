@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            图片第一次悬浮会闪一下：
+                - 图片属于网页外部资源，外部资源都需要浏览器
+                  单独发送请求加载
+        
+                - CSS sprite  通过position 切换
+         */
+        a:link{
+            display: block;
+            width: 93px;
+            height: 29px;
+            background-image: url("../../img/btn/btn.png");
+        }
+
+        a:hover {
+           background-position: -93px 0;
+        }
+
+        a:active {
+            background-position: -186px 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="#"></a>
+    
+</body>
+</html>

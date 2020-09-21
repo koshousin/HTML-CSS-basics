@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        /* 
+            border-spacing:
+                - 边框距离
+            
+            border-collapse:
+                - 合并边框
+        
+         */
+        table {
+            border:1px solid;
+            border-collapse: collapse;
+            /* border-spacing: ; */
+        }
+        th,td {
+            border:1px solid;
+            /* 
+                默认表格中数据垂直居中
+             */
+            height: 50px;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        /* 
+            如果表中没有使用tbody 标签，那么浏览器会自动添加tbody
+            标签，并把tr放进去，因此tr不是table子元素，是其后代元素
+         */
+
+        tbody > tr:nth-child(odd) {
+            background-color: salmon;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: sandybrown;
+            /* 设置为单元格td */
+            /* display: table-cell;
+           vertical-align: middle; */
+           position: relative;
+           
+        }
+
+        .box2 {
+            width:50px;
+            height: 50px;
+            background-color: seagreen;
+            position: absolute;
+            /* top:0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+            transform: translate(-50%, -50%);
+            top:50%;
+            left:50%
+        }
+    </style>
+<body>
+    <div class="box1">
+        <!-- box1 -->
+        <div class="box2">
+
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>名前</th>
+                <th>住所</th>
+                <th>年齢</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        body {
+            height: 1000px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            color: black;
+            font-size: 50px;
+        }
+        #box1 {
+            background-color: seagreen;
+        }
+
+        #box2 {
+            background-color: skyblue;
+            /* 
+                定位：一种更加高级的布局手段
+                    - 通过定位可以将元素摆在页面任意位置
+                    
+                position:
+                    - static        元素默认值（没开启定位）
+                    - absolute      
+                        - 绝对定位
+                        - 开启绝对定位后元素不设置偏移量，位置不会变
+                        - 元素会从文档流中脱离
+                        - 绝对定位会改变元素性质，块会变成行
+                        - 会提升元素的层级
+                        - 相对于其包含块定位
+                    - relative    
+                        - 相对定位
+                        - 定位参照定位元素在文档流中的位置
+                        - 开启定位后
+                            - 不设置偏移量，元素不发生任何变化
+                        - 相对定位会提升元素的层级
+                        - 相对定位不会使元素脱离文档流
+                        - 不会改变元素的性质
+                    - fixed      
+                        - 固定定位
+                        - 也是一种绝对定位，大部分特点和绝对一样
+                        - 永远参照于浏览器的视口进行定位
+                        - 不会随网页的滚动条滚动
+                    - sticky  
+                        - 粘滞定位
+                        - 和相对定位特点基本一致，但是粘滞回到某个位置固定
+                        - 相对于包含块（body）
+
+                offset:
+                    - 偏移量，可以通过偏移量改变位置
+                    - 同方向一般只是用一个属性
+                    - top
+                        定位元素和定位位置上边的距离
+                    - bottom
+                        定位元素和定位位置下边的距离
+                    - left
+                        定位元素和定位位置左边的距离
+                    - right
+                        定位元素和定位位置左边的距离
+
+                包含块：
+                    - 正常情况下：就是离当前元素最近的祖先元素（需要是块元素）
+                    - 开启绝对定位后：离当前元素最近的开启定位的祖先块元素
+                        - 如果所有祖先都未开定位，则相对于根元素（初始包含快）定位
+             */
+             position: fixed;
+             right:0;
+             top:0; 
+        }
+
+        #box3 {
+            background-color: springgreen;
+            /* position: sticky;
+            top:100px; */
+        }
+
+        #box4 {
+            width: 150px;
+            height: 150px;
+            background-color: chocolate;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">
+        1
+    </div>
+    <div id="box4">4
+        <div id="box2">
+            2
+     </div>
+    </div>
+    <div id="box3">3</div>
+</body>
+</html>

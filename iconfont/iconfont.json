@@ -1,0 +1,51 @@
+{
+  "id": "2017250",
+  "name": "小米项目",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "10436",
+      "name": "F",
+      "font_class": "F",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1008482",
+      "name": "交换",
+      "font_class": "jiaohuan",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "338376",
+      "name": "充值",
+      "font_class": "chongzhi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "10131677",
+      "name": "SIM卡",
+      "font_class": "SIMka",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "11239041",
+      "name": "企业",
+      "font_class": "qiye",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "11749375",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    }
+  ]
+}

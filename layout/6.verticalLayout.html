@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #box1 {
+            background-color: lightcoral;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: #ff00ff;
+            margin-bottom: 50px;
+        }
+    
+        #box3 {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+        }
+
+        .box1 {
+            width: 10em;
+            height: 10em;
+            background-color: lightpink;
+            overflow:hidden;
+            /* 
+                子元素是在内容区排列的，如果子元素超过了父元素，则
+                子元素会溢出
+                    - 使用over-flow 属性设置溢出
+                        - visiable    可见
+                        - scroll      生成滚动条，来查看完整内容  
+                        - hidden      隐藏不可见
+                        - auto        根据需要生成滚动条
+            */
+        }
+
+        .box2 {
+            width: 5em;
+            height: 15em;
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="box1">
+        <div id="box2">
+
+        </div>
+        <div id="box3"></div>
+    </div> -->
+
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

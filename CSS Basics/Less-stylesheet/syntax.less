@@ -1,0 +1,41 @@
+//单行注释,不会被解析到CSS中
+/*
+    CSS中的注释，内容会被解析到CSS文件中
+*/
+.box1 {
+    width: @width;
+    background-color: aqua;
+    >.box2 {
+      color: aqua;
+    }
+  
+    .box3 {
+      border:5px solid aqua;
+    }
+  }
+
+// 变量，可存储任意一个值
+// 语法： @变量名
+//变量重名时，会优先使用最后一次的变量
+@width:100px;
+@width:200px;
+@color:red;
+@class:box5;
+
+.box4 {
+    width: @width;
+}
+
+// 变量作为类名、url、属性名、选择器名使用时，以 @{变量名} 使用
+.@{class}{
+    width:@width;
+}
+
+// 将属性作为变量使用，语法： $prop
+.box6 {
+    width:100px;
+    height: $width;
+}
+
+
+  

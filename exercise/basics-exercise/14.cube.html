@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 开启透视 */
+        html {
+            perspective: 800px;
+            /* perspective-origin: 50%; */
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            margin:100px auto;
+            /* position: relative; */
+            transition: 3s;
+            /* 开启3D视图 */
+            transform-style: preserve-3d;
+        }
+
+        .cube > div {
+            width: 200px;
+            height: 200px;
+            vertical-align: top;
+            /* 设置透明 */
+            opacity: .7;
+            position: absolute;
+         
+        }
+
+        .box1 {
+            transform: rotateY(90deg) translateZ(100px);
+            /* transform: translateZ(300px) rotateY(90deg); */
+            transition: .3s ease-in-out;
+        }
+
+        /* .cube:hover .box1 {
+            transform:rotateY(90deg) translateZ(300px);
+        } */
+
+         .box2 {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .box3 {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .box4 {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .box5 {
+            transform:rotateY(180deg) translateZ(100px);
+        }
+
+        .box6 {
+            transform: rotateY(0) translateZ(100px);
+        }
+
+        .cube:hover {
+            /* rotatesd(x,y,z,angle) x,y,z 为立方体中坐标位置，坐标原点在立方体中心 */
+            transform:rotate3d(.5, .5, 1, 180deg);
+        }
+
+        /* .line {
+            width: auto;
+            height: 10px;
+            background-color: tomato;
+            perspective: 700px;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- 创建立方体 -->
+    <div class="cube">
+        <!-- 引入图片 -->
+        <div class="box1">
+            <img src="../../img/revenger/1.jpg" alt="">
+        </div>
+
+        <div class="box2">
+            <img src="../../img/revenger/2.jpg" alt="">
+        </div>
+
+        <div class="box3">
+            <img src="../../img/revenger/3.jpg" alt="">
+        </div>
+
+        <div class="box4">
+            <img src="../../img/revenger/4.jpg" alt="">
+        </div>
+
+        <div class="box5">
+            <img src="../../img/revenger/5.jpg" alt="">
+        </div>
+
+        <div class="box6">
+            <img src="../../img/revenger/6.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../fontAwesome/css/all.min.css">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .down-list {
+            height: 0;
+            background-color: tomato;
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto ;
+            text-align: center;
+            line-height: 100px;
+            overflow: hidden;
+            transition: .3s;
+        }
+        .down-list .items{
+            transition: .3s ease-in-out;
+        }
+        .down-list .items:hover {
+            cursor: pointer;
+            background-color: blueviolet;
+            color: white;
+            font-size: 40px;
+        }
+    
+        .logo{
+            position: absolute;
+            top:0;
+            text-align: center;
+            font-size: 40px;
+            transition: .3s;
+        }
+        .logo i {
+            transition:.3s ease-in-out;
+            color: blue;
+        }
+        .wrapper:hover .down-list,
+        .wrapper:hover .logo {
+           height: 100px;
+           top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo"><i class="fab fa-twitch"></i></div>
+        <div class="down-list">
+            <div class="items">Game</div>
+            <div class="items">Live</div>
+            <div class="items">Esport</div>
+            <div class="items">Favorite</div>
+            <div class="items">Notifactions</div>
+            <div class="items">Help</div>
+        </div>
+    </div>
+</body>
+</html>

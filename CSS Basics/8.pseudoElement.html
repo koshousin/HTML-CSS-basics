@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    /* 
+        伪元素，表示页面中一些特别的并不真实的存在的元素（特殊的位置）
+            伪元素使用 :: 开头
+
+            - ::first-letter    表示第一个字母
+            - ::first-line      表示第一行
+            - ::selection       表示选中的内容
+
+            - ::before          元素开始位置
+            - ::after           元素最后位置
+            以上两个结合必须结合content属性使用,而且无法被选中
+    */
+    
+    p::first-letter {
+        font-size: 30px;
+    
+    }
+
+    p::before{
+        content: "Hello";
+    }
+
+
+
+    p::selection {
+        color: mediumspringgreen;
+    }
+    
+    
+    </style>
+</head>
+<body>
+    <p style="font-size: 20px;">
+        Lasdsdhjka askdjasbdajk asdjakhwian asdajk
+    </p>
+</body>
+</html>

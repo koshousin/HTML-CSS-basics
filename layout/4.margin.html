@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+        #box {
+            width: 150px;
+            height: 150px;
+            background-color:rgba(100, 180, 150, 0.8);
+            border:10px solid #ffaaff;
+
+            /* 
+                margin:
+                    - 外边距不会影响盒子的大小
+                    - 四个子属性：top bottom left right
+                    - 当属性为正值时，元素会向相反反向移动，负值则相反
+                    - margin-right 默认情况下设置不会差生反应
+                    
+
+                元素在页面中按照自左向右的顺序排列，如果设置的是
+                左和上外边距会移动元素自身，而设置下和右外边距会移动其他元素
+            */
+
+            margin-top:50px;
+            margin-left:100px;
+            /* 移动其下的元素，而非移动其自己 */
+            margin-bottom:-50px;    
+
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+        }
+    
+    
+    </style>
+<body>
+    <div id="box"></div>
+    <div id="box2"></div>
+</body>
+</html>

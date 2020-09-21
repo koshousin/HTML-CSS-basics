@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        .box1 {
+            width: 300px;
+            margin:0 auto;
+            display: flex;
+            /* flex-direction: column; */
+            background-color: grey;
+        }
+
+        .box2 {
+            flex: auto;
+        }
+
+        .box3{
+            height: 100px;
+            background-color: hotpink;
+            width: 100px;
+        }
+
+        ul {
+            height: 100px;
+            background-color: darkolivegreen;
+            display: flex;
+            list-style: none;
+            text-align: center;
+            font-size: 30px;
+            flex: auto;
+        }
+
+        ul > li {
+            margin:0 auto;
+        }
+
+        .outer > li:nth-child(1) {
+            background-color: darkorange;
+        }
+        .outer > li:nth-child(2) {
+            background-color: red;
+            /* flex:1; */
+        }
+        .outer > li:nth-child(3) {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <ul class="outer">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

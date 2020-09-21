@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    body {
+        font-size: 20px;
+    }
+    
+    /* 
+        属性选择器
+        语法 :
+            -  [属性名]                 指定含有属性名的元素
+            -  [属性名 = 属性值]        选择含有指定属性名和属性值的元素
+            -  [属性名^ = 属性值]       选择属性值以指定值开头的元素
+            -  [属性名$ = 属性值 ]      选择属性值以指定值结尾的元素
+            -  [属性名* = 属性值]       选择属性值中含有指定属性值的元素
+    */
+    [title] {
+        color: darkorange;
+    }
+
+    [name^=du] {
+        color:green;
+    }
+
+    [name$=bo] {
+        color: greenyellow;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <div id="box" name="header">
+        <p title="changan">长安一片月，万户捣衣声</p>
+        <p title="望岳" name="dufu">烽火连三月，家书抵万金</p>
+        <p name="wangbo">落霞与孤鹜齐飞，秋水共长天一色</p>
+        <p>我欲乘风归去，又恐琼楼玉宇</p>
+    </div>
+</body>
+</html>

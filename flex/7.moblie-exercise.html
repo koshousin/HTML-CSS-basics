@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+
+        html {
+            /* 
+                网页中字体大小最小是12px(除了0),如果设置的值
+                小于12px，则自动重置为12px
+             */
+            /* 设置 rem 为移动端网页1个像素单位 */
+            
+            font-size: calc(100vw / 750);
+        }
+
+        div.container {
+            /* 
+                使用rem(html字体)即可解决运算问题
+             */
+            width:375rem;
+            height: 100px;
+            background-color: coral;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        由于不同设备的视口像素比不同，同样的375px
+        在不同的设备显示也是不同的，所以在移动端不能
+        再使用px表示了
+
+        vw  
+            - 视口宽度单位，100vw = 视口宽度
+            - 1vw = 1%视口宽度
+     -->
+
+     <div class="container"></div>
+</body>
+</html>

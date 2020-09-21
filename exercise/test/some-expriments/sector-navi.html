@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../fontAwesome/css/all.min.css">
+    <script src="./ex-js/others.js">
+    </script>
+ <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .sector-menu {
+            position: relative;
+            margin:300px auto;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            position: absolute;
+            top:0;
+            left:0;
+            
+        }
+        ul li:hover {
+            cursor: pointer;
+            display: inline-block;
+            box-shadow: 0 0 5px rgba(0,0,0,.5);
+            transition: 0;
+        }
+
+        .btn {
+            position: absolute;
+            left:-2px;
+            width: 40px;
+            height: 40px;
+            background-color: #fff;
+            border-radius: 50%;
+            z-index: 1;
+            transition:transform .7s;
+        }
+        .btn:hover {
+            /* transform: rotateZ(360deg); */
+            cursor: pointer;
+        }
+        .btn img {
+            width: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sector-menu">
+        <ul class="link-list">
+            <li class="twitter"><i class="fab fa-twitter"></i></li>
+            <li class="apple"><i class="fab fa-apple"></i></li>
+            <li class="youtube"><i class="fab fa-youtube"></i></li>
+            <li class="line"><i class="fab fa-line"></i></li>
+            <li class="weibo"><i class="fab fa-weibo"></i></li>
+            <li class="zhihu"><i class="fab fa-qq"></i></li>
+            <li class="facebook"><i class="fab fa-facebook"></i></li>
+        </ul>
+        <div class="btn">
+            <i class="others">
+                <img src="../../../img/svg/wrong.svg" alt="">
+            </i>
+        </div>
+    </div>
+</body>
+</html>

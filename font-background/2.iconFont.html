@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fontAwesome/css/all.css">
+    <style>
+        body {
+            font-size: 30px;
+        }
+
+        a:hover {
+            /* position: relative; */
+            box-shadow: 0 0 5px black;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li::before {
+            /* 编号前面要加斜杠 */
+            content: "\f520";
+            /* 设置字体样式font-family、font-weight */
+            /* 
+                fab
+                font-family:"Font Awesome 5 Free";
+
+                fas
+                font-family:"Font Awesome 5 Free";
+                font-weight:900;
+
+            
+             */
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        iconfont 
+            - 网页中要使用的一些图标
+            - 比图片内存小
+            - 在使用图标时，还可以将图标直接设置为字体，
+              然后通过font-face对字体进行引用  
+
+        fontawsome:
+            - 下载
+            - 解压
+            - 将CSS、webfonts添加到项目中
+            - 使用link添加将all.css引入到网页中
+            - 使用：
+                - 直接通过类名使用图标字体
+                - 通过实体
+                    &#x图标编码
+                
+
+     -->
+
+     <div>
+         <span>
+             <a href=""><i  class="fas fa-spinner fa-spin"></i></a>
+         </span>
+     </div>
+     <br>
+     <!-- <span class="fas fa-camera fa-stack-1x"></span> -->
+     <a href="">
+         <i  class="fas fa-camera fa-stack-1x"></i>
+     </a>
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+         <li>4</li>
+     </ul>
+     <span class="fas">&#xf7b9;核武器</span>
+     <span class="fab">&#xf2c4;</span>
+</body>
+</html>

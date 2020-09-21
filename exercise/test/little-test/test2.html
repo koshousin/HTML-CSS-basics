@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../fontAwesome/css/all.css">
+</head>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            background-color: rgb(100,200,100);
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            animation-name: myanimation;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes myanimation {
+            0%{top:-100px}
+            100%{top:200px}
+        }
+
+        .search-box {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background-color: #00b894;
+            height: 40px;
+            border-radius: 40px;
+            padding:10px;
+        }
+
+        .search-box:hover > .search-text {
+            width: 240px;
+            padding:0 6px;
+        }
+
+        .search-box:hover > .search-btn {
+           background-color: white;
+        }
+
+        .search-btn {
+            color: #e17055;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color:#353b48 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .4s;
+            text-decoration: none;
+        }
+
+        .search-text {
+            border:none;
+            background: none;
+            float: left;
+            padding:0;
+            color: white;
+            font-size: 16px;
+            transition: .4s;
+            width: 0;
+            line-height: 40px;
+            outline: none;
+        }
+
+
+    </style>
+<body>
+    <h1>Koshou Sin</h1>
+    <!-- <span class="fas fa-search"></span> -->
+    <div class="search-box">
+        <input type="text" class="search-text" placeholder="Type to scarch">
+        <a href="#" class="search-btn">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</body>
+</html>

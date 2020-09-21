@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body{
+            font-size: 30px;
+        }
+
+        /* 
+            超链接伪类
+            :link     : 表示没访问过的链接
+
+            :visited  : 表示访问过的链接
+                - 由于隐私原因，只能设置链接颜色
+            
+            :hover   : 表示鼠标悬浮状态
+
+            :active   : 表示鼠标点击状态  
+        */
+        
+        
+        a:link{
+            color:green;
+        }
+        
+        a:visited {
+            color:red;
+        }
+
+         a:hover {
+            color: magenta;
+        }
+
+        a:active {
+            color: mediumaquamarine;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <!-- 
+        1.没有访问过的
+        2.访问过的
+    -->
+
+    <a href="http://www.baidu.com">pornhub</a>
+
+    <br>
+
+    <a href="http://www.google.com">google</a>
+</body>
+</html>

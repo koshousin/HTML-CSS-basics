@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+        /* 
+            长度单位：
+                像素
+                    - 像素：显示器、 屏幕显示的基本单位
+                    - 不同屏幕的像素大小是不同的
+                    - 像素越小显示的越清晰
+                    - 同样的200px 在不同的设备下显示效果不一样
+        
+                百分比：
+                    - 设置其相对于父元素的百分比
+                    - 会跟着父元素的改变而改变
+
+                em :
+                    - 1em = 1 font-size (一般默认font-size:16px)
+                    - 根据字体大小的改变而改变
+
+                rem :
+                    - 相对于根元素(html)字体大小进行计算
+         */
+
+        #box1 {
+            width: 100px;
+            height: 200px;
+            background-color: forestgreen;
+        }
+    
+        #box2 {
+            width: 50%;
+            height: 50%;
+            background-color: hotpink;
+        }
+    
+        #box3 {
+            font-size: 10px;
+            width: 10em;
+            height: 10em;
+            background-color: khaki;
+        }
+
+        #box4 {
+            width: 10rem;
+            height: 10rem;
+            background-color: lawngreen;
+        }
+
+    
+    </style>
+<body>
+    <div id="box1">
+        <div id=box2></div>
+    </div>
+
+    <div id="box3"></div>
+
+    <div id="box4"></div>
+</body>
+</html>

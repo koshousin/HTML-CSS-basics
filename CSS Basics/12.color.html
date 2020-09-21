@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 
+            颜色单位：
+                - 颜色名：red、green...
+
+                - rgb : 
+                    通过三种颜色不同的浓度来调出不同的颜色
+                    每一种颜色范围 0 ~ 255 之间，也可以使用百分比表示
+
+                - rgba :
+                    在rgb 基础上增加了 一个参数表示透明度（0 ~ 1）
+
+                - 十六进制的rgb值
+                    语法：#红色绿色蓝色
+                    颜色浓度范围 00 ~ ff
+                    两位两位重复可以进行简写 #aabbcc --> #abc
+        
+                - HSL  HSLA
+                    H 色相 0 ~ 360
+                    S 饱和度 颜色的浓度 0% ~ 100%
+                    L 亮度  颜色的亮度  0% ~ 100%
+         */
+        
+        #box1 {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(50, 100, 150);
+            background-color: rgb(50, 100, 150,0.9);
+            background-color:rgb(120, 120, 120);
+            background-color: hsl(145, 50%, 50%);
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="box1"></div>
+</body>
+</html>

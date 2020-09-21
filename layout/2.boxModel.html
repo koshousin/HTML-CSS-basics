@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        div {
+            /* 
+                内容区（content）：元素所有子元素和文本内容都在内容区
+                width、height 设置内容区大小
+            */
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            color: red;
+
+            /* 
+                边框（border）：边框属于盒子内部
+                    - 三个样式：color、style、width
+                    - width:可以不写，一般默认3px
+                    - 属性值：
+                        四个值：上 下 左 右
+                        三个值：上 左右 下
+                        两个值：上下 左右
+                        一个值：上下左右
+                    - color:
+                        如果不指定属性值的话，默认为前景色
+            */
+
+            border:groove;
+            border-width: 10px;
+
+            /* 
+                border-style:
+                    - dotted    点状虚线
+                    - dashed    虚线
+                    - double    双线
+                    - ridge     3D凸槽
+                    - groove    3D凹槽
+                    - outset    3D凸边轮廓
+                    - inset     3D凹边轮廓
+            */
+
+        }
+        
+    
+    
+    </style>
+</head>
+<body>
+    <!-- 
+        盒子模型：
+            - css 将所有元素都设置为矩形的盒子
+            - 每一个盒子都由几个部份组成：
+                内容区（content）
+                内边距（padding）
+                边框（border）
+                外边距（margin）
+     -->
+
+     <div id="box1">div</div>
+</body>
+</html>

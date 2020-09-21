@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        div {
+            position: relative;
+            height: 20px;
+            width:200px;
+            background-color: burlywood;
+            margin:50px auto;
+            top:0;
+            transition: top .3s .3s,transform .3s ease-in-out;
+        }
+
+        input[type=checkbox]:checked + div {
+            transform:rotate(45deg) ;
+            top:100px;
+            transition:top .3s,transform .3s .3s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div></div>
+</body>
+</html>

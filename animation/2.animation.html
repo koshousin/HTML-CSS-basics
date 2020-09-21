@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: cadetblue;
+        }
+
+        .box2,.box3 {
+            width: 100px;
+            height: 100px;
+            background-color: coral;
+            margin-left: 50px;
+            margin-bottom: 100px;
+        }
+
+        /*
+            动画
+                - 可以实现动态效果
+                - 可以自动触发
+            
+            设置动画效果，先设置关键帧
+         */
+         @keyframes myanimation {
+             /* from 表示动画开始位置  也可以使用0% */
+             from{
+                 margin-left: 0;
+                 border-radius: 50%;
+             }
+             /* to 表示动画结束位置  也可以使用100% */
+             to{
+                 margin-left: 300px;
+             }
+         }
+
+         .box2 {
+             /* 
+                设置动画
+                    - name              动画名字
+                    - duration          动画执行时间  
+                    - delay             动画延时
+                    - timing-function   ...
+                    - iteration-count   执行次数
+                    - direction         执行方向
+                        - normal        默认from->to
+                        - reverse       to -> from
+                        - alternate     来回执行
+                    - play-state        执行状态
+                        - running       运行状态
+                        - paused        暂停
+                    - fill-mode         执行完毕后填充模式
+                        - none          默认值，回归原位
+                        - forwards      结束位置
+                        - backwards     延时状态时，直接处于from（0%）阶段
+                        - both          结合以上两种
+             */
+             animation-name: myanimation;
+             animation-duration: 2s;
+             animation-iteration-count: 2;
+             animation-direction: normal;
+             animation-play-state: running;
+             animation-delay: 2s;
+             animation-fill-mode: backwards;
+         }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

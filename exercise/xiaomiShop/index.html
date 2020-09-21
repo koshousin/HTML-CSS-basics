@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视官方网站
+    </title>
+    <link rel="stylesheet" href="../../CSS Basics/CSS-stylesheet/reset.css">
+    <link rel="stylesheet" href="../../fontAwesome/css/all.css">
+    <link rel="stylesheet" href="../../CSS Basics/CSS-stylesheet/index.css">
+    <link rel="stylesheet" href="../../CSS Basics/CSS-stylesheet/base.min.css">
+    <link rel="stylesheet" href="../../iconfont/iconfont.css">
+    <!-- 
+        设置网站图标，主要在标题栏和收藏栏体现
+            - 一般存在网站根目录下，favicon.ico
+     -->
+    <link rel="icon" href="../../img/mi/xiaomilogo.png">
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部导航容器 -->
+        <div class="topbar-wrapper">
+            <div class="nav w  clearfix">
+                <ul class="left-topbar">
+                    <li><a href="#">小米商城</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">MIUI</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">loT</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">云服务</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">金融</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">有品</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">小爱开发平台</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">企业团购</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">资质证照</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">协议规则</a></li>
+                    <li class="line">|</li>
+                    <li>
+                        <a href="#" class="app">
+                            下载app
+                            <!-- 添加一个弹出窗 -->
+                            <div class="qrcode">
+                                <img src="../../img/mi/download.png" alt="">
+                                <span>小米商城APP</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="line">|</li>
+                    <li><a href="#">智能生活</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">Select Location</a></li>
+                </ul>
+                <div id="shop-cart">
+                    <div id="touch-cart">
+                        <a href="#"><i class="fas fa-shopping-cart"></i>
+                        &nbsp;购物车&nbsp;&nbsp;(0)</a>
+                    </div>
+                    <div class="flexBox">
+                        购物车中还没有商品，赶紧选购吧！
+                    </div>
+                </div>
+                <ul class="right-topbar">
+                    <li><a href="#">消息通知</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">注册</a></li>
+                    <li class="line">|</li>
+                    <li><a href="#">登录</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- 分区业务导航 -->
+        <div class="category-container">
+            <div class="site-head clearfix w">
+                <!-- 左边图标区域 -->
+                <div id="img-div" class="clearfix">
+                    <!-- 提供给搜索引擎 -->
+                    小米官网
+                    <a href="#" class="home"></a>
+                    <a href="#" class="logo"></a>
+                </div>
+                <!-- 中间导航栏 -->
+                <ul id="category" class="clearfix">
+                    <li class="all-category">
+                        <a href="#" class="all-goods">全部商品分类</a>
+                        <ul class="smart-list">
+                            <li>手机 电话卡</li>
+                            <li>电视 盒子</li>
+                            <li>笔记本 显示器</li>
+                            <li>家电 插线板</li>
+                            <li>出行 穿戴</li>
+                            <li>智能 路由器</li>
+                            <li>电脑 配件</li>
+                            <li>健康 儿童</li>
+                            <li>耳机 音箱</li>
+                            <li>生活 香包</li>
+                            <div class="category-popup"></div>
+                        </ul>
+                    </li>
+                    <li class="popup"><a href="#">小米手机</a></li>
+                    <li class="popup"><a href="#">Redmi红米</a></li>
+                    <li class="popup"><a href="#">电视</a></li>
+                    <li class="popup"><a href="#">笔记本</a></li>
+                    <li class="popup"><a href="#">家电</a></li>
+                    <li class="popup"><a href="#">路由器</a></li>
+                    <li class="popup"><a href="#">智能硬件</a></li>
+                    <li><a href="#">服务</a></li>
+                    <li><a href="#">社区</a></li>
+                    <!-- 弹出层 -->
+                    <div class="items-info"></div>
+                </ul>
+                <!-- 右边搜索框 -->
+                <div id="search">
+                    <input type="text" name="items" id="items">
+                    <button id="search-logo">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 主体部分 -->
+        <div class="main w clearfix">
+            <ul class="img-list">
+                <li>
+                    <a href="#"><img src="../../img/mi/banner1.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../../img/mi/banner2.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../../img/mi/banner3jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../../img/mi/banner4.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#" ><img src="../../img/mi/banner5.jpg" alt=""></a>
+                </li>
+            </ul>
+
+            <div class="pointer">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"  class="active"></a>
+            </div>
+
+            <div class="arrow last">
+                <!-- <i class="fas fa-angle-right"></i> -->
+            </div>
+
+            <div class="arrow next">
+                <!-- <i class="fas fa-angle-right"></i> -->
+            </div>
+
+        </div>
+        <!-- 侧边悬浮窗口 -->
+        <div class="side-server">
+            <span class="fas fa-mobile-alt">
+                <div class="right-triangle"></div>
+                <div id="qrcode">
+                    <img src="../../img/mi/download.png" alt="">
+                    <span>扫码领取新人百元礼包</span>    
+                </div>
+            </span>
+            <span class="fas fa-user">
+                <div class="right-triangle"></div>
+                <div class="script">个人中心</div>
+            </span>
+            <span class="fas fa-wrench">
+                <div class="right-triangle"></div>
+                <div class="script">售后服务</div>
+            </span>
+            <span class="fas fa-headset">
+                <div class="right-triangle"></div>
+                <div class="script">人工客服</div>
+            </span>
+            <span class="fas fa-shopping-cart">
+                <div class="right-triangle"></div>
+                <div class="script">购物车</div>
+            </span>
+        </div>
+
+        <!-- 创建广告容器 -->
+        <div class="ads w clearfix">
+            <!-- 左边小图标导航 -->
+            <table class="left-ad">
+                <tr id="first">
+                    <td class="ad-touch"><i class="iconfont">&#xe659</i>小米秒杀</td>
+                    <td class="ad-touch"><i class="iconfont">&#xe646;</i>企业团购</td> 
+                    <td class="ad-touch"><i class="iconfont">&#xe600;</i> F码通道</td>
+                </tr>
+                
+                <tr id="third">
+                    <td class="ad-touch"><i class="iconfont">&#xe637;</i>米粉卡</td>
+                    <td class="ad-touch"><i class="iconfont">&#xe689;</i>以旧换新</td>
+                    <td class="ad-touch"><i class="iconfont">&#xe618;</i>话费充值</td>
+                </tr>
+            </table>
+            <!-- 广告图片 -->
+            <div class="banner">
+                <a href="#"><img src="../../img/mi/1.jpg" alt=""></a>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="../../img/mi/2.jpg" alt=""></a>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="../../img/mi/3.jpg" alt=""></a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>

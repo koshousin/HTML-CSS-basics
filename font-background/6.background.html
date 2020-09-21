@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            /* 
+                如果背景图片小于容器，则背景图片会自动平铺，
+                将元素铺满; 如果背景图片大于容器，则裁剪
+
+                background-repeat:
+                    - repeat        默认平铺方式
+                    - no-repeat     不平铺
+                    - repeat-x      横向平铺
+                    - repeat-y      纵向平铺
+
+                background-position:
+                    - 偏移量参数 x , y
+                    - 方位词参数top,left,bottom,right
+
+                background-clip:
+                    - border-box    默认值，背景会出现在边框下
+                    - padding-box   背景出现在内边距及内容下
+                    - content-box   背景出现在内容区
+
+                background-origin:  背景图片偏移量计算的原点
+                    - padding-box   默认值，从内边距开始计算呢
+                    - content-box   以内容区左上角为原点
+                    - border-box    以边框左上角为原点
+
+                background-size:
+                    - 参数 width , height
+                    - cover         比例不变，铺满
+                    - contain       完全显示
+                    - auto          重复铺满
+
+                background-attachment
+                    - scroll        背景图片跟随滚动条滚动
+                    - fixed         背景相对于视口固定
+                    - local         相对于当前元素固定
+             */
+            background-image: url("../img/cats/dahuangmao-09.png");
+            /* 可以同时设置背景色、图片 */
+            /* background-color: violet;
+            background-repeat: no-repeat;
+            background-position:-10px 50px;
+            border:double 10px red; */
+            padding: 10px;
+            background-clip: content-box;
+            background-origin: content-box;
+            background-size: auto;
+            overflow: auto;
+            
+        }
+
+        .box2 {
+            height: 800px;
+            width: 200px;
+            background-color: wheat;
+            background-image: url("../img/cats/dahuangmao-03.png");
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-position: 30px 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

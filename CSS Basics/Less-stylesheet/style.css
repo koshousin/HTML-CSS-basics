@@ -1,0 +1,10 @@
+body {
+  width: 100px;
+  height: 100px;
+}
+body div {
+  color: red;
+}
+body div :hover {
+  color: aqua;
+}

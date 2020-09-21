@@ -1,0 +1,58 @@
+.box1 {
+    // 后代元素
+    .box2{
+        background-color: aqua;
+    }
+
+    //子元素
+    > .box3{
+        background-color: blue;
+    }
+
+    //为box1 设置hover
+    // & 表示外层的父元素
+    &:hover {
+        background-color: chartreuse;
+    }
+}
+
+.p1{
+    width: 100px;
+    height: 100px;
+}
+
+// 继承样式
+.p2:extend(.box1 > .box3) {
+    color:red;
+    
+}
+
+//直接对指定的样式进行引用
+.p3 {
+    // mixin 混合
+    .p1();
+}
+
+// 使用类选择器时可以添加一个括号，此时已变成一个mixin,不会出现在CSS样式表中
+.p4(){
+    width: 100px;
+    height: 100px;
+    color: chocolate;
+}
+
+.p5 {
+    .p4();
+}
+
+// 混合函数，在混合函数中可以直接设置变量
+.test(@para,...){
+    width: @para;
+    height: 100px;
+}
+
+.p6 {
+    .test(100px);
+    // 加深
+    background-color: darken(red,10%);
+}
+

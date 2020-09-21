@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CSS.iml" filepath="$PROJECT_DIR$/.idea/CSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../java/JavaSE/HTML-CSS/JavaScript/.idea/JavaScript.iml" filepath="$PROJECT_DIR$/../../../../../java/JavaSE/HTML-CSS/JavaScript/.idea/JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ajax/.idea/ajax.iml" filepath="$PROJECT_DIR$/../ajax/.idea/ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../JS进阶源码_课件/JSAdvance/JavascriptAdvance/.idea/code.iml" filepath="$PROJECT_DIR$/../JS进阶源码_课件/JSAdvance/JavascriptAdvance/.idea/code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jQuery资料/源码_课件/jQueryTest/jQuery/.idea/jQuery.iml" filepath="$PROJECT_DIR$/../jQuery资料/源码_课件/jQueryTest/jQuery/.idea/jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nodeJS/源码&amp;笔记/01/source/.idea/source.iml" filepath="$PROJECT_DIR$/../nodeJS/源码&amp;笔记/01/source/.idea/source.iml" />
+    </modules>
+  </component>
+</project>

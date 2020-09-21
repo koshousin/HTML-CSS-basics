@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style type="text/css">
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            border: 5px solid ;
+
+            /* 
+                padding:
+                    - 有四个属性top bottom left right
+                    - 内边距会影响盒子的大小
+                    - 可见框 = content + padding + border
+            
+            */
+            padding: 100px;
+
+        }
+
+        #box2 {
+            width: 100%;
+            height: 100%;
+            background-color: springgreen;
+        }
+    
+    </style>
+<body>
+    <div id="box1">
+        <div id="box2"></div>
+    </div>
+</body>
+</html>

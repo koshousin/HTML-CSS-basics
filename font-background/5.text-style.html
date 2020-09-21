@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            text-align:
+                - left      左侧对齐
+                - right     右侧对齐
+                - center    居中对齐
+                - justify   两端对齐
+
+            text-decoration:
+                - none          无
+                - underline     下划线
+                - line-through  删除线
+                - over-line     上划线
+
+            white-space:
+                - 设置网页如何处理空白
+                - normal    正常显示
+                - nowarp    不换行显示
+                - pre       保留空白
+
+            text-overflow: ellipsis  设置显示省略号
+         */
+
+        a {
+            font:18px serif;
+            text-decoration: line-through;
+        }
+
+        p {
+            border:1px solid;
+            width: 400px;
+            font:16px/1.5 fans-serif;
+            text-align: justify;
+            white-space: nowrap;
+            overflow: hidden;
+            /* 设置省略号 */
+            text-overflow: ellipsis;
+        }
+
+
+        /* 
+            vertical-align :
+                - baseline  基线对齐
+                - top       顶部对齐
+                - middle    居中对齐
+                - 数字px    根据值调整
+         */
+        div {
+            font-size: 50px;
+        }
+
+        span {
+            font-size:20px;
+            vertical-align:super;
+        }
+
+        img {
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <p>Julie C. from Chicago, IL bought a Nosh Chalk Gray Walnut 
+        Dining Chair Very well packaged/ protected and no 
+        aseemblyrequired, which is exactly how chairs should be!</p>
+
+    
+    <div>Hello<span>Wor</span>ld</div>
+
+    <!-- 为了把图片最下方的基线去掉。可以使用vertical-align 属性 -->
+    <p><img src="../img/travel/luzhen.jpg" alt=""></p>
+    <a href="#">www.baidu.com</a>
+</body>
+</html>

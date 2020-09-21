@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            var show = document.getElementsByClassName("show-time")[0];
+            var time;
+            setInterval(function () {
+                let date = new Date();
+                let year = date.getUTCFullYear();
+                let month = date.getMonth() + 1;
+                let day = date.getDate();
+                let hours = date.getHours();
+                let minutes = date.getMinutes();
+                let seconds = date.getSeconds();
+                time = year + "年" + month + "月" + day + "日" +
+                    hours + "时" + minutes + "分" + seconds + "秒";
+                show.innerHTML = time;
+            },1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="show-time"></div>
+</body>
+</html>

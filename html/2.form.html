@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        form 的属性
+            - action 表单要提交的服务器地址
+        
+        文本框、单选框、多选框：
+            - 为了提交到服务器或区分，必须指定name属性
+
+        单选框、多选框
+            - 必须写value属性
+
+        autocomplete (自动补全)
+            - on 
+            - off
+
+        readonly
+            - 将表单项设为只读
+        
+        disabled
+            - 将表单项设为禁用
+     -->
+
+     <form action="">
+         <input type="text" name="username" autocomplete="off">
+         <input type="color" value="#333" id="head" name="head" >
+         <!-- 
+             下拉列表
+          -->
+          <select name="selec" id="" multiple="multiple">
+              <option value="beiJing">北京</option>
+              <option value="nanjing">南京</option>
+              <option value="tokyo">东京</option>
+          </select>
+         <input type="submit" value="提交" >
+     </form>
+</body>
+</html>

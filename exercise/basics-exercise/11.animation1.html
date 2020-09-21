@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 256px;
+            width: 256px;
+            margin:30px auto;
+            background-image: url("../../img/animation/bg2.png");
+            background-position-x: 0;
+            animation: test 1s steps(6) infinite;
+        }
+
+        @keyframes test {
+            0%{background-position-x: 0;}
+            /* 25%{background-position-x:-256px}
+            50%{background-position-x:-264px} */
+            /* 75%{} */
+            100%{background-position-x:-1536px}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

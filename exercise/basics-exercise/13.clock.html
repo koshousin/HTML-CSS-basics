@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock {
+            width: 300px;
+            height: 300px;
+            background-image: url("../../img/animation/1024px-Analogue_clock_face.svg.png");
+            background-size: cover;
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .min-wrapper {
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto auto;
+            width: 250px;
+            height: 250px;
+            transform: rotateZ(0);
+            animation: turn 18s linear infinite;
+        }
+
+        .minute {
+            width: 5px;
+            height: 85px;
+            background-color: black;
+            margin:30px auto;
+        }
+
+        .hour-wrapper {
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto auto;
+            width: 150px;
+            height: 150px;
+            animation: turn 54s infinite linear;
+        }
+
+        .hour {
+            width: 6px;
+            height: 60px;
+            background-color: black;
+            margin:10px auto;
+        }
+
+        .sec-wrapper {
+            position: absolute;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+            margin:auto auto;
+            width: 250px;
+            height: 250px;
+            animation: turn 12s infinite linear;
+            animation-timing-function: steps(60);
+        }
+
+        .second {
+            width: 3px;
+            height: 95px;
+            background-color: black;
+            margin:20px auto;
+        }
+
+        @keyframes turn {
+            0%{transform: rotateZ(0);}
+            100%{transform: rotateZ(360deg);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <!-- 分钟容器 -->
+        <div class="min-wrapper">
+            <div class="minute"></div>
+        </div>
+        <!-- 时针容器 -->
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+        <!-- 秒针 -->
+        <div class="sec-wrapper">
+            <div class="second"></div>
+        </div>
+    </div>
+</body>
+</html>

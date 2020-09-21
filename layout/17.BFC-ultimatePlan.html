@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box1 {
+            border:10px solid #ccc;
+        }
+
+        #box2 {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            float: left;
+            /* margin-top: 30px; */
+        }
+    
+        /* 通过box3 设置清除浮动撑起父元素 */
+        /* #box3 {
+            clear: both;
+        } */
+
+        /* 
+            使用伪元素添加元素撑起
+            由于添加的伪元素是行内元素，所以要设置成块元素
+         */
+        #box1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2"></div>
+        <div id="box3"></div>
+    </div>
+</body>
+</html>

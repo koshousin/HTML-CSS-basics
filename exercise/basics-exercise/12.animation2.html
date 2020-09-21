@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 400px;
+            background-image: url("../../img/animation/trump_run.png");
+            background-position-x: 0;
+            animation: infinite .3s trump-run steps(6);
+        }
+
+        @keyframes trump-run {
+            0%{background-position-x: 0;}
+            100%{background-position-x: -600px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color: #333;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    animation-name: myanimation;
+    position: relative;
+    /* 设置动画持续时间 */
+    animation-duration: 4s;
+    /* 设置动画次数 */
+    animation-iteration-count: 1;
+
+    animation-fill-mode: forwards;
+    /* 设置动画开始推迟时间 */
+    /* animation-delay: 2s; */
+    /* 设置动画方向 */
+    /* animation-direction: alternate;
+    /* 设置动画开始与结束速度 */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes myanimation {
+    0% {background-color: white;left: 0px; top :0px;
+        border-radius: 0;}
+    25% {background-color: red;left: 300px; top:0px;
+        border-top-left-radius:50%;}
+    50% {background-color: green;left:300px; top:300px;
+        border-radius: 50% 50% 0 0;}
+    75% {background-color: blue;left:0px; top:300px;
+        border-radius: 50% 50% 50% 0;}
+    100% {background-color: white;left:0px;top: 0px;
+        border-radius: 50% 50% 50% 50%;}
+}

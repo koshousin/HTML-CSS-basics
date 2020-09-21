@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .draw-border{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height:100vh;
+        }
+        button{
+            text-transform: uppercase;
+            border:0;
+            background:none;
+            color: #4361ee;
+            font-weight:bold;
+            position: relative;
+            outline: none;
+            padding:10px 20px;
+            box-sizing: border-box;
+        }
+        button::before,
+        button::after {
+            box-sizing: inherit;
+            position: absolute;
+            content:"";
+            border:2px solid transparent;
+            width: 0;
+            height:0;
+        }
+        button::after {
+            bottom:0;
+            right:0;
+        }
+        button::before {
+            top:0;
+            left:0;
+        }
+        button:hover::after, 
+        button:hover::before{
+            width: 100%;
+            height: 100%;
+        }
+        button:hover::before {
+            border-top-color: #4361ee;
+            border-right-color: #4361ee;
+            transition: width .3s ease-out , height .3s ease-out .3s ;
+        }
+        button:hover::after {
+            border-bottom-color: #4361ee;
+            border-left-color: #4361ee;
+            transition:border-color 0s ease-out .6s, width .3s ease-out .6s , height .3s ease-out 1s
+        }
+    </style>
+</head>
+<body>
+    <div class="draw-border">
+        <button>hover me</button>
+    </div>
+</body>
+</html>

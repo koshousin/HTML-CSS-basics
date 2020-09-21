@@ -1,0 +1,173 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+// base
+.w {
+    width: 693rem;
+    margin:0 auto;
+}
+
+html {
+    // 设置一个像素的视口宽度
+    font-size: calc(100vw / 750);
+    background-color: rgb(239,240,244);
+}
+
+.top-bar:extend(.w) {
+    height: 175rem;
+    // background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    // 设置辅轴对齐
+    align-items: center;
+    .fa-stream {
+        transform: rotateY(180deg);
+    }
+}
+
+a {
+    font-size: 38rem;
+    color:rgb(101,101,101);
+    text-decoration: none;
+}
+
+.app-title a {
+    color: rgb(36,37,61);
+    font-size: 55rem;
+    font-weight: 600;
+}
+
+.banner:extend(.w) {
+    img{
+        width: 100%;
+        vertical-align: top;
+    }
+}
+
+nav:extend(.w){
+    height: 333rem;
+    display: flex;
+    // 防止弹性元素收缩
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-evenly;
+    .nav-items {
+        width: 327rem;
+        height: 103rem;
+        line-height:103rem ;
+        background-color: crimson;
+        color: white;
+        font-size: 30rem;
+        border-radius: 20rem;
+        box-shadow: 0 1px 5px rgba(0,0,0,.5);
+        i {
+            font-size: 40rem;
+            margin-right:26rem;
+            margin-left: 32rem;
+        }
+    }
+    // 为每个款元素设置背景颜色
+    & > .nav-items:nth-child(1) {
+        background-image: 
+        linear-gradient(to bottom left,
+        rgb(249,112,83),rgb(244,120,101));
+    }
+    & > .nav-items:nth-child(2) {
+        background-image: 
+        linear-gradient(to bottom left,
+        rgb(198,87,255),rgb(209,124,253));
+    }
+    & > .nav-items:nth-child(3) {
+        background-image: 
+        linear-gradient(to bottom left,
+        rgb(255,57,113),rgb(254,71,123));
+    }
+    & > .nav-items:nth-child(4) {
+        background-image: 
+        linear-gradient(to bottom left,
+        rgb(29,146,255),rgb(27,199,251));
+    }
+}
+
+.course-info:extend(.w) {
+    display: flex;
+    flex-flow: column;
+    
+    // background-color: salmon;
+    // 对标题与轮播图的设置
+    .recommend{
+        height: 391rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 47rem;
+    }
+
+    // 设置提示标题
+    .type-name {
+        padding-left:18rem;
+        color: black;
+        font-size: 33rem;
+        font-weight: 600;
+        border-left:8rem solid rgb(58,132,255);
+    }
+    a{
+        font-size: 28rem;
+        color: rgb(101,101,101);
+        float: right;
+    }
+    // 设置中键轮播图
+    .item-list {
+        width: 720rem;
+        height: 322rem;
+        display: flex;
+        flex-flow: nowrap;
+        // 为课程开启滚动条
+        overflow: auto;
+        // 对每张轮播图的设置
+        .item {
+            box-sizing: border-box;
+            margin-right:23rem;
+            width: 327rem;
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+            justify-content: space-evenly;
+            border-radius: 15rem;
+            // align-items:center;
+            padding-left:22rem;
+            box-shadow: 0 0 5px rgba(0,0,0,.3);
+            .cover-img {
+                width: 285rem;
+                img{
+                    vertical-align: top;
+                    width: 285rem;
+                }
+            }
+            h3 {
+                font-size: 28rem;
+            }
+            .user {
+                display: flex;
+                .avatar {
+                    height: 41rem;
+                    width: 41rem;
+                    img {
+                        border-radius: 50%;
+                        width: 41rem;
+                    }
+                    flex-grow: 1;
+                }
+                .username {
+                    font-size: 28rem;
+                    color: rgb(150,148,148);
+                    flex-grow: 2;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../fontAwesome/css/all.css">
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        
+    }
+
+    .container {
+        font:12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;;
+        background-color: rgb(227,228,229);
+        color: rgb(155,159,158);
+        height: 30px;
+        line-height: 30px;
+        box-sizing: border-box;
+    }
+
+    .location {
+        float: left;
+    }
+
+    .left {
+        height: 30px;
+        line-height: 30px;
+        position: relative;
+        padding:0 10px;
+        border:1px solid transparent;
+        z-index: 9999;
+    }
+
+    .location:hover .left{
+        background-color: white;
+        border-color:rgb(204,204,204);
+        border-bottom: none;
+    }
+
+    .location:hover > .city-list {
+        display: block;
+    }
+
+    .city-list {
+        display: none;
+        width: 320px;
+        height: 436px;
+        background-color: white;
+        /* clear: left; */
+        /* 设置绝对定位 */
+        position: absolute;
+        top:30px;
+        border:1px solid rgb(204,204,204);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        z-index: 999;
+    }
+
+
+    .right {
+        list-style: none;
+        float:right;
+    }
+
+    .right > li:nth-child(odd) {
+        padding:0 6px;
+    }
+
+    .inner {
+        margin:0 auto;
+        width: 990px;
+    }
+
+    i[class="fas fa-map-marker-alt"] {
+        color:red;
+        font-size: 14px;
+    }
+
+    li {
+        float: left;
+        /* padding:0px 1em; */
+        height: 30px;
+        position: relative;
+        
+    }
+
+    li a {
+        /* border:1px solid transparent; */
+        z-index: 9999;
+    }
+
+    #myJD {
+        display: none;
+        position: absolute;
+        width: 265px;
+        height: 200px;
+        border:1px solid rgb(204,204,204);
+        box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+        top:29px;
+        left:-1px;
+        z-index: 999;
+    }
+
+    .right > li:nth-child(5):hover{
+        background-color: white;
+        border-color:rgb(204,204,204);
+        border-bottom: none;
+    }
+
+    .right > li:nth-child(5):hover #myJD{
+        display: block;
+    }
+
+    .left > li {
+        border:none;
+    }
+    a.redStuff,
+    a:hover{
+        color:red;
+        cursor: pointer;
+    }
+
+    /* 设置中间杠用于分离 */
+    .line {
+        width: 1px;
+        height: 10px;
+        background-color: rgb(204, 202, 202);
+        margin: 12px 6px 0;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="inner">
+            <!-- 左侧菜单 -->
+            <div class="location">
+                <div class="left">
+                    <i class="fas fa-map-marker-alt"></i>&nbsp;<a class="city">北京</a>
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <ul class="right">
+                <li>你好！<a>请登录</a> <a class="redStuff">免费注册</a></li>
+                <li class="line"></li>
+                <li><a>我的订单</a></li>
+                <li class="line"></li>
+                <li>
+                    <a>我的京东</a>&nbsp;<i class="fas fa-angle-down"></i>
+                    <span id="myJD">span</span>
+                </li>
+                <li class="line"></li>
+                <li><a>京东会员</a></li>
+                <li class="line"></li>
+                <li><a class="redStuff">企业采购</a>&nbsp;<i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li>客户服务&nbsp;<i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li>网站导航&nbsp;<i class="fas fa-angle-down"></i></li>
+                <li class="line"></li>
+                <li>手机京东</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

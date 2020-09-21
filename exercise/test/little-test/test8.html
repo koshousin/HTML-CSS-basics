@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        input[id=toggle] {
+            display: none;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            position: relative;
+        }
+
+
+        h1{
+            height: 1px;
+            width: 50px;
+            background-color: #fff;
+            margin:10px auto;
+            position: absolute;
+            left:25px;
+            transition: .3s;
+            transform-origin:0 50% ;
+        }
+
+        .one {
+            top:30px;
+        }
+
+        .two {
+            top:65px;
+        }
+
+        input[type=checkbox]:checked + label .one {
+            transform: rotate(45deg);
+        }
+
+        input[type=checkbox]:checked + label .two {        
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">
+        <div class="box">
+            <h1 class="one"></h1>
+            <h1 class="two"></h1>
+        </div>
+    </label>
+
+    
+    
+</body>
+</html>

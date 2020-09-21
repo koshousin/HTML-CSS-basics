@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        div{
+            /* width: 100px;
+            height: 100px; */
+            /* background-color: coral; */
+            position: relative;
+            /* transition-property: transform; */
+            /* transition-property: border-radius transform;
+            transition-duration:5s 2s ease-in-out;
+            animation-name: myanimation;
+            animation-duration: 4s;
+            animation-iteration-count: 3;
+            animation-fill-mode: forwards;
+            animation-direction: alternate; */
+            animation-name: myanimation;
+            animation-duration: 4s;
+            text-align: center;
+            transition-duration: .5s ease;
+            animation-fill-mode: forwards;
+        }
+
+        /* div:hover {
+            transform: rotateY(180deg)
+            border-radius: 50%;
+        } */
+
+        @keyframes myanimation {
+            0%{top:0; left:0;}
+            
+            100%{top:150px; }
+        }
+
+        p {
+            margin-top: 300px;
+            animation-name: pAnima;
+            animation-duration: 2s;
+            position: relative;
+        }
+
+        @keyframes pAnima {
+            0% {left:-500px}
+            100%{left:0; }
+        }
+    </style>
+<body>
+    <div>
+        <h1>MyTitle</h1>
+    </div>
+
+    <p>asdahsdjgasgdjasgdhdafasfa</p>
+</body>
+</html>

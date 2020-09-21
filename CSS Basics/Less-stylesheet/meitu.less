@@ -1,0 +1,155 @@
+// 顶部导航条
+.top-bar-wrapper {
+    background-color: #000;
+}
+
+.top-bar {
+    // 指定最大宽度
+    max-width: 900px;
+    margin:0 auto;
+    height: 48px;
+    padding:0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// 左侧三明治菜单样式
+input[type=checkbox]{
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: rgb(197,196,196);
+    }
+}
+
+.left-menu {
+    .menu-icon {
+        width: 18px;
+        height: 48px;
+        // 使用定位
+        position: relative;
+        li{
+            position: absolute;
+            height: 1.5px;
+            width: 18px;
+            background-color: #fff;
+            // 开启过渡效果
+            transition: all .3s ease-in-out;
+            // 改变旋转原点
+            transform-origin:0 50% ;
+        }
+        li:nth-child(1) {
+            top:18px;
+        }
+        li:nth-child(2) {
+            top:24px;
+        }
+        li:nth-child(3) {
+            top:30.726px;
+        }
+    }
+
+    // 设置按压后菜单特效
+    input[type=checkbox]:checked + label ul{
+        & > li:nth-child(1) {    
+            transform:rotateZ(45deg);
+        }
+
+        & > li:nth-child(2) {
+            opacity: 0;
+        }
+
+        & > li:nth-child(3) {
+            transform:rotateZ(-45deg);
+        }
+    }
+    input[type=checkbox]:checked ~ ul {
+        display: block;
+
+    }
+
+    // 下拉菜单项
+    .nav-menu {
+        position: absolute;
+        background-color: #000;
+        top:48px;
+        // 设置撑满网页
+        left:0;
+        right:0;
+        bottom: 0;
+        // transition: .3s ease-in-out;
+        li {
+            width: 80%;
+            margin:0 auto;
+            border-bottom: 1px solid #757474;
+            a {
+                line-height: 44px;
+                font-size: 14px;
+            }
+            span {
+                margin-left: 6px;
+                color: #fff;
+            }
+        }
+        display: none;
+    }
+}
+
+// 设置中间logo
+.logo {
+    a {
+        // 隐藏字体
+        // font-size: 0;
+        text-indent: -9999px;
+        display: block;
+        // 由于是2倍图，所以要除以2
+        width: 123px;
+        height: 30px;
+        background-image: url("../../img/spriteIMG/meitu-sprites.png");
+        background-size: 400px 400px ;
+    }
+}
+
+// 设置媒体查询
+@media only screen {
+    // 设置断点
+    @media (min-width: 768px){
+        // 调整导航栏顺序
+        .left-menu{
+            order: 2;
+            // 把导航栏两侧空白占领
+            flex:auto;
+            // 隐藏三明治菜单项
+            .menu-icon {
+                display: none;
+            }
+            // 显示菜单项
+            .nav-menu {
+                // 关掉定位
+                position: static;
+                display: flex;
+                justify-content: space-evenly;
+                li {
+                    margin:0;
+                    width: auto;
+                    border:none;
+                    span {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+        .logo{
+            order: 1;
+        }
+        .user-info{
+            order: 3;
+        }
+    }
+}

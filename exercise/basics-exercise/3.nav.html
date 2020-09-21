@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+        }
+
+        body {
+            height: 2000px;
+        
+        }
+
+        ul {
+            background-color: black;
+            /* height: 50px; */
+            width: 1022px;
+            margin:50px auto;
+            list-style: none;
+
+            /* position: sticky;
+            top:30px; */
+            /* animation-name: myanimation;
+            transition-property: all;
+            transition-duration: 2s ;
+            animation-timing-function: ease-in-out; */
+        }
+
+        @keyframes myanimation {
+            0%{top:-20px}
+            100%{top:300px}
+        }
+
+        ul::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* div > span:nth-child(1) {
+            margin-left:100px;
+        } */
+
+        li {
+            height: 48px;
+            background-color:#cccccc;
+            line-height: 48px;
+            float: left;
+        }
+
+        a {
+            /* 将a元素转换为块元素 */
+            text-decoration: none;
+            display: block;
+            /* height: 100%; */
+            padding: 0 1.8em;
+            color:#888888 ;
+            font-weight: 550;
+        }
+
+        ul>li:last-child a {
+            padding-right:29px ;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline red;
+            background-color:#878787 ;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="">HTML/CSS</a></li>
+        <li><a href="">Browser Side</a></li>
+        <li><a href="">Server Side</a></li>
+        <li><a href="">Programming</a></li>
+        <li><a href="">XML</a></li>
+        <li><a href="">Web Building</a></li>
+        <li><a href="">Reference</a></li>
+    </ul>
+</body>
+</html>

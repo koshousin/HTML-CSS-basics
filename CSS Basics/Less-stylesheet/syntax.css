@@ -1,0 +1,23 @@
+/*
+    CSS中的注释，内容会被解析到CSS文件中
+*/
+.box1 {
+  width: 200px;
+  background-color: aqua;
+}
+.box1 > .box2 {
+  color: aqua;
+}
+.box1 .box3 {
+  border: 5px solid aqua;
+}
+.box4 {
+  width: 200px;
+}
+.box5 {
+  width: 200px;
+}
+.box6 {
+  width: 100px;
+  height: 100px;
+}

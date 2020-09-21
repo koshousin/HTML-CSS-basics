@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin:0;
+        padding:0;
+    }
+
+     ul {
+            width: 350px;
+            height: 500px;
+            border:10px solid;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            /* 
+                弹性容器的属性：
+
+                flex-wrap
+                    - 设置弹性元素是否在弹性容器中自动换行
+                    - nowrap            不换行
+                    - wrap              沿着辅轴自动换行
+                    - wrap-reverse      沿着辅轴反方向自动换行
+                
+                flex-flow
+                    - direction 和 wrap 的简写属性
+
+                justify-content
+                    - 如何分配主轴上的剩余空间(设置主轴上元素如何排列)
+                    - flex-start        元素沿着主轴起边排列
+                    - flex-end          元素沿着主轴终边片列
+                    - center            元素在主轴居中排列
+                    - space-around      空白分布在元素两侧
+                    - space-evenly      空白均匀分布在元素一侧
+                    - space-between     空白均匀分布在中间
+
+                align-items
+                    - 元素在辅轴上如何对齐
+                    - stretch       默认值，将元素的长度设置为相同的值 
+                    - flex-start    元素沿着辅轴起边排列
+                    - flex-end      元素沿着辅轴终边排列
+                    - center        垂直居中对齐
+                    - baseline      基线对齐
+
+                align-content
+                    - 辅轴空白空间的分布
+                    - flex-start        
+                    - flex-end          
+                    - center            
+                    - space-around      
+                    - space-evenly 
+             
+            */
+             /* flex-wrap: wrap-reverse; */
+             /* justify-content:space-evenly; */
+             flex-flow: wrap row;
+             align-items: center;
+             align-content: flex-end;
+        }
+
+    li {
+        /* 
+            弹性元素属性：
+
+                - align-self    用来覆盖当前弹性元素上的align-items
+                    
+        */
+        /* align-self: stretch; */
+        width: 80px;
+        /* height: 80px; */
+        line-height: 80px;
+        text-align: center;
+        font-size: 40px;
+        flex-shrink: 0;
+    }
+
+    ul > li:nth-child(1) {
+            background-color: coral;
+    }
+
+    ul > li:nth-child(2) {
+        background-color: #255;
+    }
+
+    ul > li:nth-child(3) {
+        background-color: #255000;
+    }
+
+    ul > li:nth-child(4) {
+        background-color: #131452;
+    }
+
+    ul > li:nth-child(5) {
+        background-color: #333444;
+    }
+
+    ul > li:nth-child(6) {
+        background-color: #2550ff;
+    }
+</style>
+<body>
+    
+    <ul>
+        <li>1</li>
+        <li>
+            2
+            <div>2</div>
+        </li>
+        <li>
+            3
+            <div>3</div>
+            <div>3</div>
+        </li>
+
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+</body>
+</html>

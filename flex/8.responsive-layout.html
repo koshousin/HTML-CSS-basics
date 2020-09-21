@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            使用媒体查询
+                @media 查询规则()
+                    - all       所有设备
+                    - print     打印设备
+                    - screen    带屏幕的设备
+                    - speech    屏幕阅读器
+            可以在媒体查询添加关键字 only ，表示仅有
+
+            媒体特性：
+                - 样式切换的分界点。我们称其为断点。
+                - 一般常用的断点：
+                    -  < 768 超小屏幕   max-width = 768
+                    -  > 768 小屏幕     min-width = 768
+                    -  > 992 中性屏幕   min-width = 992
+                    -  > 1200 大屏幕    min-width = 1200   
+                - width         视口的宽度
+                    min-width   视口大于最小宽度生效
+                    max-width   视口小于最大宽度生效
+                - height        视口的高度
+        */
+        /* @media print,screen {
+            body {
+                background-color: #bfa;
+            }
+        } */
+
+        /* x < 600 & x > 700 */
+        @media not screen and (min-width:600px) and (max-width: 700px) {
+            body {
+                background-color:red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        响应式布局：
+            - 网页可以根据不同的设备或窗口大小呈现出不同的效果
+            - 使用响应式布局，可以使一个网页适用于所有设备
+            - 响应式关键 媒体查询
+
+     -->
+
+</body>
+</html>

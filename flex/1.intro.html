@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+
+        ul {
+            width:200px;
+            border:10px solid;
+            list-style: none;
+            display: flex;
+
+            /* 
+                flex-direction:
+                    - 弹性容器属性
+                    - 容器中元素排列方向
+                    - row            默认值，排成一行
+                    - row-reverse    反向水平排列
+                    - colum          纵向排列
+                    - colum-reverse  反向纵向排列
+
+                主轴
+                    - 弹性元素排列方向
+                侧轴
+                    - 与主轴垂直方向的称为侧轴
+            */
+            flex-direction: row;
+        }
+
+        li {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 40px;
+            /* 
+                弹性元素的属性：
+                    flex-grow
+                        - 指定元素伸展系数
+                        - 默认0，不伸展
+                        - 父元素剩余空间按照比例进行分配
+ 
+                    flex-shrink
+                        - 元素收缩系数
+                        - 默认1，缩小元素长度填充内容区
+                        - 当父元素不足以容纳所有的子元素时，
+                          对子元素进行收缩
+            */
+            /* flex-grow: 1; */
+        }
+
+        ul > li:nth-child(1) {
+            background-color: coral;
+            /* flex-grow: 1; */
+
+        }
+
+        ul > li:nth-child(2) {
+            background-color: #255;
+            /* flex-grow: 1; */
+ 
+        }
+
+        ul > li:nth-child(3) {
+            background-color: #255000;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        flex: 弹性盒子
+            - 是CSS中一种布局手段，它主要用来代替浮动来完成页面的布局
+            - 使元素具有弹性，随页面大小而改变
+            - 弹性容器
+                - 要使用弹性盒，必须先将一个元素设置为弹性容器
+                - 可以通过display设置弹性容器
+                    - display:flex
+                    - display:inline-flex
+            - 弹性元素
+                - 弹性容器的直接子元素是弹性元素
+                - 一个元素可以同时是弹性容器和元素
+     -->
+
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

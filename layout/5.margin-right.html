@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #box1 {
+            height: 100px;
+            border: 10px solid greenyellow;
+        }
+
+        #box2 {
+            width: 50px;
+            height: 50px;
+            background-color: hotpink;
+            margin:0 auto;
+            /* 
+                元素在其父元素中水平方向的位置由以下几个属性共同决定
+                    margin-left
+                    border-left
+                    padding-left
+                    width
+                    padding-right
+                    border-right
+                    margin-right
+
+                一个元素在其父元素中，水平布局必须满足以下等式：
+                父元素内容区宽度 
+                    = margin-left + border-left + padding-left + width 
+                      + padding-right + border-right + margin-right
+
+                      - 以上等式必须满足，如果等式不成立，则称为过度约束，等式会自动调整
+                      - 调整情况：
+                            如果这7个值中没有为auto的情况，则浏览器会自动调整margin-right值以适应
+                      - 这7个值可以设置为auto，width、margin-right、margin-left
+                        如果某个值为auto，则调整为auto的那个值以使等式成立  
+                      - 如果将宽度和外边距设置为auto，则宽度为最大，外边距为0     
+            */
+        }
+    
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="box1">
+        <div id="box2">
+            
+        </div>
+    </div>
+</body>
+</html>

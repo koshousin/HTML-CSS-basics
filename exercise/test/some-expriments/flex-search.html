@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../fontAwesome/css/all.min.css">
+    <style>
+        * {
+            padding:0;
+            margin:0;
+        }
+        .wrapper{
+            position: absolute;
+            transform: translate(-50%,-50%);
+            top : 50%;
+            left : 50%;
+            overflow: hidden;
+            text-align: center;
+            border:1px solid #000;
+            border-radius: 15px;
+            padding-right:10px;
+            background-color: #000;
+            transition: .3s;
+        }   
+        .wrapper:hover input{
+            width: 180px;
+            background-color: #000;
+            color: #fff;
+        }
+        .wrapper:hover {
+            box-shadow: 0 0 5px rgba(0,0,0,.3);
+            background-color: #fff;
+        }
+
+        .arrow-wrapper {
+            float: right; 
+            line-height: 30px;
+            /* width: 15px;
+            overflow: hidden; */
+        }
+        
+        .wrapper:hover a {
+            color: #000;
+        }
+
+        input[type=text]{
+            border:none;
+            outline: none;
+            line-height: 30px;
+            font-size: 17px;
+            padding:0 15px;
+            width: 0;
+            transition:.3s ease-in-out;
+        }
+    
+        .fa {
+            font-size: 20px;
+        }
+        a {
+            color: cornsilk;
+        }
+
+        .box a {
+            display: inline-block;
+            color: #000;
+            background-color: green;
+        }
+
+        .box a:hover {
+            transform: scaleX(5);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" placeholder="Type to search">
+        <div class="arrow-wrapper">
+            <a href="#"><i class="fa fa-angle-left"></i></a>
+            <a href="#"><i class="fa fa-angle-right"></i></a>
+        </div>
+    </div>
+    <div class="box">
+        <a href="#">
+            <i class="fa fa-search"></i>
+        </a>
+    </div>
+</body>
+</html>

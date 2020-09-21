@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin:0;
+            padding:0;
+        }
+         ul {
+            width: 500px;
+            border:10px solid;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-size: 40px;
+            /* 
+                弹性元素属性：
+                    - flex-grow     剩余空间比例分配
+                    - flex-shrink   弹性元素缩减系数
+                    - flex-basis    元素基础长度
+                        - 指定主轴上的基础长度
+                        - 默认auto，以元素高度或宽度为准
+
+                flex    简写属性
+                    - grow , shrink , basis
+                    - auto      (1 , 1, auto)
+                    - initial   (0 , 1 , auto)
+
+                order   元素排列顺序
+                    - 
+            */
+        }
+
+        ul > li:nth-child(1) {
+            background-color: coral;
+            /* flex-grow: 1; */
+            order: 3;
+        }
+
+        ul > li:nth-child(2) {
+            background-color: #255;
+            /* flex-grow: 1; */
+            order:2;
+        }
+
+        ul > li:nth-child(3) {
+            background-color: #255000;
+            /* flex-grow: 1; */
+            flex-basis: 200px;
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>

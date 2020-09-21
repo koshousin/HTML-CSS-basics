@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin:0;
+            padding: 0;
+        }
+        /* 
+            浮动元素不会盖住文字，文字会自动环绕浮动元素
+
+        */
+
+        #box1{
+            width: 200px;
+            height: 200px;
+            background-color: springgreen;
+            float: left;
+        }
+        /* 
+            元素设置浮动以后，将会从文档流中脱离，元素的一些特点也会发生改变：
+                - 块元素：
+                    - 不再独占一行
+                    - 宽度和高度被内容撑开
+                - 行内元素：
+                    - 脱离文档流之后，可以设置宽高，特点和块元素一样
+
+        */
+
+        .box2 {
+            background-color: springgreen;
+            float: left;
+        }
+
+        .box3 {
+            background-color: steelblue;
+        }
+    
+        .span1 {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: tan;
+        }
+
+        .span2 {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: teal;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div id="box1"></div>
+    <p>
+        dasdjkhasdkhajsdhjkashdlkjaskldajsdjkahdjhasjdhakjshdjkasdjk
+    </p> -->
+
+    <!-- <div class="box2">hello</div>
+    <div class="box3">hello</div> -->
+    <span class="span1">span1</span>
+    <span class="span2">span2</span>
+</body>
+</html>

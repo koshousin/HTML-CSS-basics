@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+        }
+        .box {
+            margin-top:200px;
+            width: 125px;
+            height: 125px;
+            background-color: #000;
+            transition: .3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+        }
+        .box img {
+            width: 125px;
+            filter: invert(100%);
+            vertical-align: top;
+            position: relative;
+            top:-2px;
+        }
+        .box:hover {
+           animation: hover-effects;
+           animation-duration: 2s;
+           animation-iteration-count: infinite;
+           animation-timing-function: ease-in-out;
+        }
+
+        @keyframes hover-effects {
+            0%{box-shadow: 0 0 5px rgba(9, 132, 227,.3);}
+            /* 25%{box-shadow: 0 0 15px rgba(9, 132, 227,.5);} */
+            50%{box-shadow: 0 0 10px rgba(9, 132, 227,1);}
+            /* 75%{box-shadow: 0 0 25px rgba(9, 132, 227,.5);} */
+            100%{box-shadow: 0 0 5px rgba(9, 132, 227,.3);}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../../../img/svg/github.svg" alt="">
+    </div>
+</body>
+</html>

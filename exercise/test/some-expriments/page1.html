@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: teal;
+        }
+
+        h1 {
+            text-align: center;
+            position: relative;
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes myanimation {
+            0%{top:-100px; font-size: 15px;}
+            
+            100%{top:100px;font-size: 30px;}
+        }
+
+        #login {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin:auto auto;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        
+
+        form {
+            margin-top:100px;
+          
+        }
+
+        #username{
+            width: 50px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-style: none;
+        }
+
+        #username:focus {
+            width: 100px;
+        }
+
+        #submit {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            transition: .5s ease-in-out;
+        }
+
+        #submit:hover {
+            transition: .3s ease-in-out;
+            box-shadow: 0 0 10px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome !</h1>
+    <div id="login">
+        <form action="">
+            <input type="text" id="username" placeholder="name">
+            <br>
+            <input type="submit" value="login" id="submit">
+        </form>
+    </div>
+</body>
+</html>

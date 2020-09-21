@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        /* 
+            通过浮动可以设置一个元素向其父元素左侧或右侧飘
+            注意：元素设置浮动后水平布局的等式不需要强制
+                 满足
+
+            - 元素设置浮动后，会完全从文档流中脱离,不再占用文档流中的位置
+              不仅外边距和水平布局等式没了，所以元素下边的还在
+              文档中的元素会自动向上移动
+
+            - 为什么可以横向排列？
+                - 浮动元素会完全脱离文档流，不再占据位置
+                - 设置浮动以后，会向父元素左侧/右侧移
+                - 浮动元素默认不会从父元素中移出
+                - 浮动元素不会覆盖其他浮动元素
+                - 如果浮动元素上面是一个没有浮动元素的块元素
+                  则浮动元素无法上移
+                - 浮动元素不会超过上边浮动的兄弟元素
+        */
+    
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: seagreen;
+            float:left;
+        }
+
+        .box2 {
+            width: 250px;
+            height: 250px;
+            background-color: skyblue;
+            float:left;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box2"></div>
+</body>
+</html>

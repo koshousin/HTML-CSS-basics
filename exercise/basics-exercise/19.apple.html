@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koshou Sin</title>
+    <link rel="stylesheet" href="../../CSS Basics/CSS-stylesheet/reset.css">
+    <link rel="stylesheet" href="../../CSS Basics/Less-stylesheet/apple.css">
+    <link rel="stylesheet" href="../../fontAwesome/css/all.css">
+    <link rel="icon" href="../../img/webIcon/apple.ico">
+</head>
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar">
+            <!-- 左侧菜单 -->
+            <div class="left-menu">
+                <!-- 三明治菜单符号 -->
+                <input type="checkbox" id="toggle-menu">
+                <label for="toggle-menu">
+                    <ul>
+                        <li></li><li></li>
+                    </ul>
+                </label>
+                <!-- 下拉菜单 -->
+                <div class="down-list">
+                    <div class="inp-search">
+                        <div class="btn-wrapper">
+                            <button class="btn1"><i class="fa fa-search"></i></button>
+                            <input type="text" placeholder="搜索 apple.com.cn">
+                            <button class="btn2"></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <ul>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">技术支持</a></li>
+                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- logo -->
+            <div class="logo">
+                <div class="title">Apple</div>
+                <a href="#"><i class="fab fa-apple"></i></a>
+            </div>
+
+            <!-- shopping -->
+            <div class="shop-bag">
+                <input type="checkbox" id="shop-btn">
+                <label for="shop-btn">
+                    <i class="fa fa-shopping-bag"></i>
+                    <div class="triangle"></div>
+                </label>  
+                <div class="shop-info">
+                    <div class="shop-state">
+                        你的购物袋是空的
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-shopping-bag"></i> 购物袋</a></li>
+                        <li><a href="#"><i class="fa fa-heart"></i>收藏</a></li>
+                        <li><a href="#"><i class="fa fa-box"></i>订单</a></li>
+                        <li><a href="#"><i class="fa fa-cog"></i>账户</a></li>
+                        <li><a href="#"><i class="fa fa-user"></i>登录</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中间广告图片部分 -->
+    <div class="banner-text">
+        <span>
+            <a href="#">在线选购</a>,享受免费送货、Specialist专家支持、免息分期等服务。
+        </span>
+    </div>
+    <div class="banner-wrapper">
+        <!-- iphoneSE广告 -->
+        <div class="iphoneSE-wrapper"> 
+            <div class="banner iphoneSE">
+                <span>新款</span>
+                <h2>iPhone SE</h2>
+                <h3>
+                    <span>称心称手,超值入手。</span>
+                    <span>RMB 3299 起</span> 
+                </h3>
+                <h4>折价换购,仅 RMB 96/月或 RMB 2299 起<sup>1</sup>。</h4> 
+                <div class="ad-img">
+                    <div class="more-info">
+                        <a href="#"><span>进一步了解</span> </a>
+                        <a href="#"><span>购买</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- iphone11广告 -->
+        <div class="iphone11-wrapper"> 
+            <div class="banner iphone11">
+                <h2>iPhone 11</h2>
+                <h3>
+                    <span>一切都刚刚好。</span>
+                    <!-- <span>RMB 3299 起</span>  -->
+                </h3>
+                <h4>折价换购,仅 RMB 175/月或 RMB 4199 起<sup>1</sup>。</h4> 
+                <div class="ad-img">
+                    <div class="more-info">
+                        <a href="#"><span>进一步了解</span> </a>
+                        <a href="#"><span>购买</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ipad广告 -->
+        <div class="ipad-wrapper"> 
+            <div class="banner ipad">
+                <h2>iPad Pro</h2>
+                <h3>
+                    <span>你的下一台电脑，何必是电脑。</span>
+                    <!-- <span>RMB 3299 起</span>  -->
+                </h3>
+                <h4>折价换购,仅 RMB 175/月或 RMB 4199 起<sup>1</sup>。</h4> 
+                <div class="ad-img">
+                    <div class="more-info">
+                        <a href="#"><span>进一步了解</span> </a>
+                        <a href="#"><span>购买</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 配件以及服务广告部分 -->
+    <div class="accessory-table">
+        <!-- airPods -->
+        <div class="server airPods">
+            <h2>这一刻，属于你。</h2>
+            <h3>
+                让你的AirPods更显个性，免费镌刻服务，Apple独家福利。
+            </h3>
+            <div class="more-info">
+                <a href="#"><span>进一步了解</span> </a>
+                <a href="#"><span>购买</span> </a>
+            </div>
+        </div>
+        <div class="server buy-ipad">
+            <h2>
+                为高校生活购买
+                <br>
+                Mac 或 iPad,
+                <br>
+                AirPods 搭配其中
+            </h2>
+            <a href="#"><span>选购 </span>&gt;</a>
+        </div>
+        <div class="server buy-iphone">
+            <h2>iPhone 11 Pro</h2>
+            <h3>摄像头、显示屏、性能，样样 Pro 如其名</h3>
+            <h4>折价换购,仅 RMB 283/月或 RMB 6799 起<sup>1</sup>。</h4>
+            <div class="more-info">
+                <a href="#"><span>进一步了解</span> </a>
+                <a href="#"><span>购买</span> </a>
+            </div>
+        </div>
+        <div class="server apple-music">
+            <h2>
+                Taylor Swift&nbsp;&nbsp;全新专辑，
+                <br>
+                独家在线播放,即刻开听。
+            </h2>
+            <div class="free-trial">
+                <a href="#"><span>免费试用</span><sup>2</sup> </a>
+                <a href="#"><span>进一步了解</span></a>
+            </div>
+            <div class="music-icon">
+                <a href="#">
+                    <img src="../../img/apple/icon_apple_music__2x.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="server iwatch">
+            <h2>
+                <i class="fab fa-apple"></i>
+                WATCH
+            </h2>
+            <span>SERIES 5</span>
+            <h3>
+                <span>自带全天候视网膜显示屏。</span> 
+                <span>这块表，好不一样。</span>
+            </h3>
+            <div class="more-info">
+                <a href="#"><span>进一步了解</span> </a>
+                <a href="#"><span>购买</span> </a>
+            </div>
+        </div>
+        <div class="server imac">
+            <h2>iMac</h2>
+            <h3>一体式 ，多面手。</h3>
+            <div class="more-info">
+                <a href="#"><span>进一步了解</span> </a>
+                <a href="#"><span>购买</span> </a>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚部分 -->
+    <footer>
+        <!-- 详细说明部分 -->
+        <div class="foot-wrapper">
+            <div class="more-intro">
+                <p>1. 所示的 iPhone 11 Pro 64GB 机型价格是使用 iPhone X 64GB 机型进行折抵换购的价格。所示的 iPhone 11 64GB 机型价格是使用 iPhone 8 Plus 64GB 机型进行折抵换购的价格。所示的 iPhone SE 64GB 机型价格是使用 iPhone 8 64GB 机型进行折抵换购的价格。上述所示分期付款金额仅为折抵换购后使用特定期数免息分期付款估算得出的示例 (仅显示整数数额，未显示小数点以后的金额)，实际支付金额以银行或花呗账单为准。最高可享 24 期免息分期，到 Apple Store 零售店和在线商店购买时可享受的免息分期期数和最低限额可能有所不同，银行和花呗提供的免息分期期数和最低限额可能有所不同。折抵服务的购新价格仅可在限定时间内使用，并且要求用于购买新款 iPhone，以限制条款为准。实际折抵金额取决于设备的状况、配置、制造年份，以及发售国家或地区。银行或花呗可能要求你的可用信用额度大于所购买产品的总金额，才能使用分期付款服务。有关信用卡或花呗分期服务的申请及使用问题，请与银行或花呗联系，Apple 对此不做任何承诺和保证。Apple 的折抵换购服务为 Apple 与 Apple 折抵服务合作伙伴共同推出，年满 18 周岁及以上者才能享受此项折抵换购服务。店内折抵换购需出示政府颁发并附有照片的有效身份证件 (当地法律可能会要求存储该信息)。可能需要遵守 Apple 或 Apple 折抵服务合作伙伴的其他条款。本折抵换购服务不能与 Apple 的其他优惠或折扣活动同时使用。
+                    如需了解更多免息分期付款信息，
+                    请点击此处。
+                </p>
+                <p>
+                    2. 免费试用期结束后，每月收费 RMB 10。无需合约。当试用期结束后，会员方案将按月自动续订，直至取消订阅。
+                </p>
+                <p>
+                    妙控键盘需单独购买。 
+                </p>
+            </div>
+            <!-- 底部选项列表 -->
+            <ul class="bottom-list">
+                <li class="bottom-items">
+                    <a href="#">选购及了解</a>
+                    <ul class="items-list">
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">AirPods</a></li>
+                        <li><a href="#">HomePad</a></li>
+                        <li><a href="#">iPod touch</a></li>
+                        <li><a href="#">配件</a></li>
+                        <li><a href="#">App Store 充值卡</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">服务</a>
+                    <ul class="items-list">
+                        <li><a href="#">Apple Music</a></li>
+                        <li><a href="#">iCloud</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">账户</a>
+                    <ul class="items-list">
+                        <li><a href="#">管理你的Apple ID</a></li>
+                        <li><a href="#">Apple Store 账户</a></li>
+                        <li><a href="#">iCloud.com</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">Apple Store 商店</a>
+                    <ul class="items-list">
+                        <li><a href="#">查找零售店</a></li>
+                        <li><a href="#">在线选购</a></li>
+                        <li><a href="#">Genius Bar 天才吧</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Apple 夏令营</a></li>
+                        <li><a href="#">Apple Store App</a></li>
+                        <li><a href="#">翻新和优惠</a></li>
+                        <li><a href="#">分期付款</a></li>
+                        <li><a href="#">Apple Trade In 换购计划</a></li>
+                        <li><a href="#">订单状态</a></li>
+                        <li><a href="#">选购帮助</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">商务应用</a>
+                    <ul class="items-list">
+                        <li><a href="#">Apple 与商务</a></li>
+                        <li><a href="#">商务选购</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">教育应用</a>
+                    <ul class="items-list">
+                        <li><a href="#">Apple 与教育</a></li>
+                        <li><a href="#">高校师生选购</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">Apple 价值观</a>
+                    <ul class="items-list">
+                        <li><a href="#">辅助功能</a></li>
+                        <li><a href="#">环境责任</a></li>
+                        <li><a href="#">隐私</a></li>
+                        <li><a href="#">供应商责任</a></li>
+                    </ul>
+                </li>
+                <li class="bottom-items">
+                    <a href="#">关于Apple</a>
+                    <ul class="items-list">
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Apple 管理层</a></li>
+                        <li><a href="#">工作机会</a></li>
+                        <li><a href="#">创造就业</a></li>
+                        <li><a href="#">活动</a></li>
+                        <li><a href="#">联系 Apple</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 查找更多线下门店 -->
+            <div class="others">
+                <div class="find-more">
+                    更多选购方式：<a href="#">查找你附近的 Apple Store 零售店</a>及<a href="#">更多门店</a> ，
+                    或者致电 400-666-8800。
+                </div>
+                <div class="legal-info">
+                    <div class="right">
+                        Copyright &copy; 2020 Apple Inc.保留所有权利。
+                    </div>
+                    <ul class="legal-list">
+                        <li class="legal-items">
+                            <a href="#">隐私政策</a>
+                        </li>
+                        <li class="legal-items">
+                            <a href="#">使用条款</a>
+                        </li>
+                        <li class="legal-items">
+                            <a href="#">销售政策</a>
+                        </li>
+                        <li class="legal-items">
+                            <a href="#">法律信息</a>
+                        </li>
+                        <li class="legal-items">
+                            <a href="#">网站地图</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 营业执照 -->
+                <div class="license">
+                    <div class="business-license">
+                        <a href="#">
+                            京ICP备10214630 营业执照
+                        </a>
+                    </div>
+                    <div class="device-license">
+                        无线电发射设备预售备案编号11201910351200
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

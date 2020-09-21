@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+            /*  font-face可以将服务器中的字体直接提供给用户去使用 */
+            @font-face {
+                /* 给字体起名 */
+                font-family: 'myfont';
+                /* 服务器中字体的路径 */
+                /* 一个点代表一级目录 ./ = font-background  ../ = JavascriptAdvance*/
+                src: url('./fonts/ZCOOLXiaoWei-Regular.ttf');
+            }
+
+
+        p {
+            /* 
+                color:前景色，设置字体颜色
+                font-size: 字体大小
+                    - em : 当前元素的一个font-size
+                    - rem : 相对于根元素的font-size
+                font-family:
+                    字体分类
+                    - serif:衬线字体
+                    - sans-serif:非衬线字体
+                    - monospace: 等宽字体
+
+                    - 可以使用多个字体，用逗号隔开，如果前面没有，
+                      则使用后面
+
+                font-face可以将服务器中的字体直接提供给用户去使用
+
+             */ 
+            color: blue;
+            font-size: 2em;
+            font-family: "myfont";
+            
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <p>今天天气很热，So HOT！How about you ?</p>
+</body>
+</html>
