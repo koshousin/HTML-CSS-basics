@@ -1,2 +1,2 @@
-# Vue
+# HTML CSS
 HTML CSS learning
